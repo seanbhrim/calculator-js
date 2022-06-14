@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h1>
+    Simple Calculator
+  </h1>
+  <form action="" class="calc" onsubmit="handleSubmit()">
+    <input 
+      id="calc-displaytext"
+      class="calc__display"
+      type="text" disabled
+    >
+    <div class="calc__buttons">
+      <div class="calc__numbers">
+        <fieldset>
+          <button type="button" onclick="handleNumber('7')">7</button>
+          <button type="button" onclick="handleNumber('8')">8</button>
+          <button type="button" onclick="handleNumber('9')">9</button>
+        </fieldset>
+    
+        <fieldset>
+          <button type="button" onclick="handleNumber('4')">4</button>
+          <button type="button" onclick="handleNumber('5')">5</button>
+          <button type="button" onclick="handleNumber('6')">6</button>
+        </fieldset>
+    
+        <fieldset>
+          <button type="button" onclick="handleNumber('1')">1</button>
+          <button type="button" onclick="handleNumber('2')">2</button>
+          <button type="button" onclick="handleNumber('3')">3</button>
+          <button type="button" onclick="handleNumber('0')">0</button>
+        </fieldset>
+      </div>
+      <div class="calc__ops">
+        <fieldset>
+          <button type="button" onclick="handleOp('+')">+</button>
+          <button type="button" onclick="handleOp('-')">-</button>
+          <button type="button" onclick="handleOp('*')">*</button>
+          <button type="button" onclick="handleOp('/')">/</button>
+        </fieldset>
+        <button type="button" onclick="handleDel()">DEL</button>
+        <button type="submit">=</button>
+      </div>
+    </div>
+  </form>
+  <script src="js/script.js"></script>
+</body>
+</html>
